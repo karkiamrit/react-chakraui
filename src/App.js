@@ -7,8 +7,10 @@ import Videos from './components/Videos';
 import Upload from './components/Upload';
 import Signup from './components/Signup';
 import Login from './components/Login';
+import axios from 'axios';
 
 
+axios.defaults.baseURL = 'http://localhost:8000/api'; 
 function App() {
   return (
     <Router>
